@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CoOsin</string>
+    <string name="s_i_n_tho_i">SỐ ĐIỆN THOẠI</string>
+    <string name="m_t_kh_u">MẬT KHẨU</string>
+    <string name="ng_nh_p">Đăng nhập</string>
+    <string name="ch_a_c_t_i_kho_n">Chưa có tài khoản?</string>
+</resources>

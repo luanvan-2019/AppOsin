@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="25"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:background="#258BD0"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:ignore="NestedWeights">
+        </LinearLayout>
+        <LinearLayout
+            android:background="#8ABE41"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#03A9F4"
+            android:id="@+id/label_signup"
+            android:text="ĐĂNG NHẬP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="19"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/label_user"
+            android:text="@string/s_i_n_tho_i"
+            android:textColor="#258BD0"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/input_user"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:layout_below="@+id/label_user"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="#FF258BD0"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_account_circle_black_24dp" />
+        <TextView
+            android:id="@+id/label_pass"
+            android:text="@string/m_t_kh_u"
+            android:textColor="#258BD0"
+            android:textStyle="bold"
+            android:layout_below="@+id/input_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/input_password"
+            android:textColor="#FF258BD0"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/ic_remove_red_eye_black_24dp"
+            android:drawableLeft="@drawable/ic_fingerprint_black_24dp"
+            android:layout_below="@+id/label_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:drawableRight="@drawable/ic_remove_red_eye_black_24dp"
+            android:drawableStart="@drawable/ic_fingerprint_black_24dp" />
+
+        <Button
+            android:id="@+id/btn_login_1"
+            android:text="@string/ng_nh_p"
+            android:textColor="#ffffff"
+            android:background="@drawable/bg_ui"
+            android:layout_below="@+id/input_password"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_below="@id/btn_login_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_chuaDK"
+                android:textColor="#FF258BD0"
+                android:text="@string/ch_a_c_t_i_kho_n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txt_signup"
+                android:textColor="#f20"
+                android:text="  Đăng ký ngay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
