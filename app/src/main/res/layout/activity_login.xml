@@ -31,7 +31,7 @@
         android:gravity="center_vertical"
         android:layout_weight="5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp">
 
         <TextView
             android:gravity="center_horizontal"
@@ -39,15 +39,22 @@
             android:textStyle="bold"
             android:textColor="#03A9F4"
             android:id="@+id/label_signup"
+            android:layout_marginBottom="20dp"
             android:text="ĐĂNG NHẬP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_below="@+id/label_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </RelativeLayout>
 
     <RelativeLayout
+        android:gravity="center_vertical"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_weight="19"
+        android:layout_weight="10"
         android:layout_width="match_parent"
         android:layout_height="0dp">
 
@@ -91,12 +98,20 @@
             android:drawableRight="@drawable/ic_remove_red_eye_black_24dp"
             android:drawableStart="@drawable/ic_fingerprint_black_24dp" />
 
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
         <Button
             android:id="@+id/btn_login_1"
             android:text="@string/ng_nh_p"
             android:textColor="#ffffff"
             android:background="@drawable/bg_ui"
-            android:layout_below="@+id/input_password"
             android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -118,8 +133,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
-
-
     </RelativeLayout>
 
 

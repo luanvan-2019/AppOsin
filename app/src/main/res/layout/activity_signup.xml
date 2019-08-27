@@ -33,13 +33,6 @@
         android:layout_weight="5"
         android:layout_width="match_parent"
         android:layout_height="0dp">
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:navigationIcon="?attr/homeAsUpIndicator" >
-
-        </androidx.appcompat.widget.Toolbar>
         <TextView
             android:gravity="center_horizontal"
             android:textSize="20sp"
@@ -104,7 +97,7 @@
             android:layout_height="wrap_content" />
 
         <EditText
-            android:id="@+id/input_password"
+            android:id="@+id/input_pass_sign"
             android:textColor="#FF258BD0"
             android:inputType="textPassword"
             android:drawableEnd="@drawable/ic_remove_red_eye_black_24dp"
@@ -120,7 +113,7 @@
             android:text="NHẬP LẠI MẬT KHẨU"
             android:textColor="#258BD0"
             android:textStyle="bold"
-            android:layout_below="@+id/input_password"
+            android:layout_below="@+id/input_pass_sign"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
